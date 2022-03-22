@@ -20,4 +20,4 @@ elif num_choice == 1 and num_computer == 3:
     print("Win!!!!")
 
 else:
-    print("oops daisy")
+    print("oops daisy yay")
