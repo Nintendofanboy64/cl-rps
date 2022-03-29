@@ -4,7 +4,7 @@ x = True
 
 def game():
 	weapons =["", "Rock", "Paper", "Scissors"]
-	print("")
+	print("\033[1;32;40m")
 	print(weapons[1:])
 	print("\033[1;32;40m\nRock = 1", "Paper = 2", "Scissors = 3\n")
 
@@ -18,24 +18,31 @@ def game():
 
 	if num_choice == num_computer:
 		print("\033[1;36;40mDraw")
+		play()
 
 	elif num_choice == 1 and num_computer == 3:
 		print("\033[1;33;40mWin!!!!")
-		
+		play()
+
 	elif num_choice == 1 and num_computer == 2:
 		print("\033[1;31;40mYou Lose :(")
+		play()
 
 	elif num_choice == 2 and num_computer == 3:
 		print("\033[1;31;40mYou Lose :(")
-		
+		play()
+	
 	elif num_choice == 2 and num_computer == 1:
 		print("\033[1;33;40mWin!!!!")
-		
+		play()
+
 	elif num_choice == 3 and num_computer == 2:
 		print("\033[1;33;40mWin!!!!")
-		
+		play()
+
 	elif num_choice == 3 and num_computer == 1:
 		print("\033[1;31;40mYou Lose :(")
+		play()
 
 	else:
 		print("\033[1;36;40moops daisy yay")
